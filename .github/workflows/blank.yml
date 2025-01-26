@@ -30,6 +30,6 @@ jobs:
           set -x
           fallocate -l 1G test.img
           ls -l /dev
-          losetup -f -P test.img
+          sudo losetup -f -P test.img
           losetup
           ls -l /dev
