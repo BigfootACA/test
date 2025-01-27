@@ -69,5 +69,6 @@ updatedb() {
         fi
 }
 PACMAN_KEYRING_DIR=$PWD/test
+GPG_PACMAN=(gpg --homedir "${PACMAN_KEYRING_DIR}" --no-permission-warning)
 initialize
 updatedb
